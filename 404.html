@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script>
+      // Redirect to index with hash for SPA routing on GitHub Pages
+      var l = window.location;
+      var path = l.pathname.replace(/^\//,'');
+      var hash = '#/' + path;
+      l.replace('/' + (l.search ? l.search + '&' : '?') + 'p=404' + hash);
+    </script>
+  </head>
+  <body></body>
+</html>
+
